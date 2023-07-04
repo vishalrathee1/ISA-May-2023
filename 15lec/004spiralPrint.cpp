@@ -20,16 +20,19 @@ int main(){
 		encol--; // c-2
 
 	// last row --> right to left // enrow
+	if( strow<=enrow){
 		for(int i = encol; i>=stcol; i--){
 			cout<<arr[enrow][i]<<'\t'; //--> last row all elements
 		}
 		enrow--; // r-2
+	}
 
 	// first column --> bottom to top // stcol
+	if(stcol<=encol){
 		for(int i =enrow; i>=strow ; i--){
 			cout<<arr[i][stcol]<<'\t'; //--> first column all elements
 		}
-		stcol++;
+		stcol++;}
 	}
 	cout<<endl;
 	return 0;
